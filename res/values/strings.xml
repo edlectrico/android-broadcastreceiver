@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Android BroadcastReceiver Example</string>
+    <string name="action_settings">Settings</string>
+    <string name="store_parameter">Store</string>
+    <string name="default_label">Store parameter</string>
+    <string name="default_parameter_value">1</string>
+	
+	<!-- String constants -->
+	<!-- Main -->
+	<string name="preferences_name">Preferences</string>
+	<string name="broadcast_received">Broadcast received!</string>
+	<string name="preference_stored">Preference stored!</string>
+	
+	<!-- MyService -->
+	<string name="broadcast_creation">Creating and sending new Broadcast Intent</string>
+	<string name="broadcast_sent">Broadcast message SENT</string>
+	<string name="broadcast_not_sent">Broadcast message NOT SENT</string>
+	
+	<!-- Actions -->
+	<string name="start_service">START_SERVICE</string>
+	<string name="service_broadcast">SERVICE_BROADCAST</string>
+	<string name="check_stored_parameter">CHECK_STORED_PARAMETER</string>
+	
+	<!-- Preferences -->
+	<string name="stored_parameter">STORED_PARAMETER</string>
+
+</resources>
