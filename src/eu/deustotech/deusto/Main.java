@@ -49,7 +49,6 @@ public class Main extends Activity implements android.view.View.OnClickListener 
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
@@ -63,12 +62,15 @@ public class Main extends Activity implements android.view.View.OnClickListener 
 
 		Log.e(TAG, getResources().getString(R.string.preference_stored));
 
-		// TODO: send an Intent from here to notify the service
+		// Send an Intent from here to notify the service
 		// about the new configuration
 		Intent configurationIntent = new Intent(getApplicationContext(),
 				MyService.class);
 		configurationIntent.setAction(getResources().getString(
 				R.string.check_stored_parameter));
+		//This is the way of sending Intent to a service. It does not matter that the
+		//service is already running (as in this case). If so, the service will not
+		//be launched again, it only will handle this new Intent
 		startService(configurationIntent);
 	}
 

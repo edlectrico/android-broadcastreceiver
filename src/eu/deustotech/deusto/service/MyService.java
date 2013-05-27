@@ -29,14 +29,6 @@ public class MyService extends IntentService {
 		return super.onStartCommand(intent, flags, startId);
 	}
 
-	/**
-	 * @param Intent
-	 * 
-	 *            This method receives commands from the UcadamiSettings
-	 *            activity to configure the service and broadcast the
-	 *            corresponding messages
-	 * 
-	 */
 	@Override
 	protected void onHandleIntent(Intent intent) {
 		// TODO: create the logic to send the corresponding commands
